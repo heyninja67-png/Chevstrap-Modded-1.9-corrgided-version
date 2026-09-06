@@ -1,0 +1,87 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="5dp"
+		android:background="@drawable/background_normal"
+		android:orientation="vertical">
+		<LinearLayout
+			android:id="@+id/linear3"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="2dp"
+			android:orientation="horizontal">
+			<TextView
+				android:id="@+id/textview1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:text="Add Fast Flag By JSON"
+				android:textSize="12sp"
+				android:textColor="#FFFFFF" />
+			<LinearLayout
+				android:id="@+id/linear5"
+				android:layout_width="500dp"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:orientation="vertical" />
+		</LinearLayout>
+		<EditText
+			android:id="@+id/edittext1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:background="#202020"
+			android:gravity="top"
+			android:textSize="16sp"
+			android:textColor="#FFFFFF"
+			android:hint="{\n    &quot;FFlagDebugDisplayFPS&quot;: &quot;True&quot;\n}"
+			android:textColorHint="#616161"
+			android:layout_weight="1" />
+		<Button
+			android:id="@+id/button1"
+			android:layout_width="match_parent"
+			android:layout_height="35dp"
+			android:layout_margin="5dp"
+			android:padding="5dp"
+			android:background="#000000"
+			android:text="Import from file"
+			android:textSize="12sp"
+			android:textColor="#FFFFFF" />
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="match_parent"
+			android:layout_height="45dp"
+			android:padding="5dp"
+			android:gravity="center_horizontal|center_vertical"
+			android:orientation="horizontal">
+			<Button
+				android:id="@+id/button_ok"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginEnd="5dp"
+				android:padding="8dp"
+				android:background="#000000"
+				android:text="Ok"
+				android:textSize="12sp"
+				android:textColor="#FFFFFF" />
+			<Button
+				android:id="@+id/button_cancel"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="5dp"
+				android:padding="8dp"
+				android:background="#000000"
+				android:text="Cancel"
+				android:textSize="12sp"
+				android:textColor="#FFFFFF" />
+		</LinearLayout>
+	</LinearLayout>
+</LinearLayout>

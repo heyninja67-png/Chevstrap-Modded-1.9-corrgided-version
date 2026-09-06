@@ -1,0 +1,59 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:id="@+id/linear4"
+		android:layout_width="match_parent"
+		android:layout_height="35dp"
+		android:background="@android:color/transparent"
+		android:orientation="vertical">
+
+		<LinearLayout
+			android:id="@+id/linear1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@android:color/transparent"
+			android:gravity="center_vertical"
+			android:orientation="horizontal">
+
+			<TextView
+				android:id="@+id/textview_name"
+				android:focusable="false"
+				android:layout_width="350dp"
+				android:layout_height="match_parent"
+				android:gravity="center_vertical"
+				android:paddingStart="5dp"
+				android:paddingEnd="0dp"
+				android:text=""
+				android:textSize="12sp"
+				android:textColor="#FFFFFF" />
+
+			<TextView
+				android:id="@+id/textview_value"
+				android:focusable="false"
+				android:layout_width="0dp"
+				android:layout_height="match_parent"
+				android:layout_weight="1"
+				android:gravity="center_vertical"
+				android:paddingStart="5dp"
+				android:paddingEnd="0dp"
+				android:text=""
+				android:textSize="12sp"
+				android:textColor="#FFFFFF" />
+		</LinearLayout>
+	</LinearLayout>
+
+	<LinearLayout
+		android:id="@+id/linear_hehe"
+		android:layout_width="match_parent"
+		android:layout_height="1.2dp"
+		android:padding="8dp"
+		android:background="#3B4550"
+		android:gravity="bottom"
+		android:orientation="horizontal" />
+</LinearLayout>

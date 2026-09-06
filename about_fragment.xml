@@ -1,0 +1,113 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<ScrollView
+		android:id="@+id/vscroll3"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="8dp"
+		android:background="@drawable/background_normal">
+		<LinearLayout
+			android:id="@+id/linear9"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:orientation="vertical">
+			<LinearLayout
+				android:id="@+id/linear10"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:orientation="vertical">
+				<TextView
+					android:id="@+id/textview1"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:padding="2dp"
+					android:text=""
+					android:textSize="11sp"
+					android:textColor="#FFFFFF" />
+				<TextView
+					android:id="@+id/textview2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="10dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="@string/license"
+					android:textSize="14sp"
+					android:textStyle="bold"
+					android:textColor="#FFFFFF" />
+			</LinearLayout>
+			<ListView
+				android:id="@+id/listview1"
+				android:layout_width="match_parent"
+				android:layout_height="120dp"
+				android:layout_margin="5dp"
+				android:padding="8dp"
+				android:choiceMode="none"
+				tools:listitem="@layout/item_license" />
+			<LinearLayout
+				android:id="@+id/linear11"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:orientation="vertical">
+				<TextView
+					android:id="@+id/textview3"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="Credits"
+					android:textSize="14sp"
+					android:textStyle="bold"
+					android:textColor="#FFFFFF" />
+				<TextView
+					android:id="@+id/textview6"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:gravity="center_horizontal|center_vertical"
+					android:text="@string/without_these_people_this_app_probably_wouldn_t_exist"
+					android:textSize="14sp"
+					android:textColor="#FFFFFF" />
+			</LinearLayout>
+			<LinearLayout
+				android:id="@+id/linear12"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="#050505"
+				android:orientation="vertical">
+				<TextView
+					android:id="@+id/textview_credits1"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Coding &amp; Design by: @FrosSky"
+					android:textSize="12sp"
+					android:textColor="#FFFFFF" />
+				<TextView
+					android:id="@+id/textview_credits2"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Special Thanks: @MaximumADHD, Bloxstrap"
+					android:textSize="12sp"
+					android:textColor="#FFFFFF" />
+				<TextView
+					android:id="@+id/textview_credits3"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:text="Feature Ideas: @0x01f, @notfireleaf, @golden_piglet_96893, @5070"
+					android:textSize="12sp"
+					android:textColor="#FFFFFF" />
+			</LinearLayout>
+		</LinearLayout>
+	</ScrollView>
+</LinearLayout>
