@@ -12,16 +12,25 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Set up JDK 17
-        uses: actions/setup-java@v4
+        uses: actions/setup-java@v5
         with:
           java-version: '17'
           distribution: 'temurin'
+
+      - name: Debug - list project structure
+        run: |
+          echo "=== Raiz do projeto ==="
+          ls -la
+          echo "=== Pasta gradle/wrapper ==="
+          ls -la gradle/wrapper/ || echo "PASTA gradle/wrapper NÃO EXISTE"
+          echo "=== Pasta app ==="
+          ls -la app/ || echo "PASTA app NÃO EXISTE"
 
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
 
       - name: Build Debug APK
-        run: ./gradlew assembleDebug --console=plain
+        run: ./gradlew assembleDebug --console=plain --stacktrace
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
